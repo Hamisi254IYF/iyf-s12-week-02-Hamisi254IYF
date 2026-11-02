@@ -40,5 +40,5 @@ a:hover {
 | `type="submit"` | Submit button |
 
 ### Screenshot
-![DevTools Elements Panel](./images/github-devtools.png)
+![DevTools Elements Panel](./Images/github-devtools.png)
 

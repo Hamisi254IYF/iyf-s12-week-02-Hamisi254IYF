@@ -818,3 +818,44 @@ footer.site-footer a:hover { color: var(--accent-2); }
     .story img { margin: 0 auto; }
     main { padding: 3rem 1rem; }
 }
+/* Hamburger menu — hidden on desktop */
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    display: none;
+    font-size: 1.8rem;
+    color: var(--accent);
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+    user-select: none;
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+    .nav-toggle-label {
+        display: block;
+    }
+
+    nav.main-nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem 0;
+        border-top: 1px solid var(--border);
+        margin-top: 1rem;
+    }
+
+    .nav-toggle:checked ~ nav.main-nav ul {
+        display: flex;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 768px) {
+    nav.main-nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+}
